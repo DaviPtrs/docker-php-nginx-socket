@@ -37,4 +37,4 @@ EXPOSE 80 443
 
 ENTRYPOINT ["multirun"]
 
-CMD ["php-fpm -F", "nginx", "-v"]
+CMD ["nginx", "php-fpm -F", "-v"]
